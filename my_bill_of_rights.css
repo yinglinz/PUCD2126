@@ -1,0 +1,30 @@
+
+h1 {
+	font-size: 50px;
+	font-weight: 700px;
+	color: blue;
+	text-shadow: 20px 9px black;
+	position: static;
+	border: 40px dotted #73AD21;
+	text-align:center
+
+}
+
+h2 {
+	color: red;
+	font-size: 20px;
+	font-weight: bold;
+	position: static;
+	border: 10px solid black;
+	text-align:center
+}
+
+body {
+	background-color: yellow;
+	text-align:center;
+}
+
+p {
+	color: pink;
+	font: italic bold 20px/50px helvetica; 
+}
