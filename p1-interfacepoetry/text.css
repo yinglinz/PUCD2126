@@ -5,4 +5,7 @@ body {
   padding-top:10em;
 }
 
-* { color:#fff; text-decoration: none;}
+h1{
+  text-align: center;
+  color:navy;
+}
