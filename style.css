@@ -1,16 +1,15 @@
 body{
-  color:pink;
+  color: mintcream;
+  background: pink;
+  font-size: 30px
 }
 
 h1{
-  color:red;
-  font-size: xx-large;
+  color: red;
+  font-size: 100px;
 }
+
 h2{
-  color:orange;
-  font-size: large;
-}
-ul{
-  color:navy;
-  font-size:50px;
+color: orange;
+font-size: 50px;
 }
