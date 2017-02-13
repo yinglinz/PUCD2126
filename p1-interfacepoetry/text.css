@@ -1,11 +1,25 @@
 body {
-  background-color:#ce3635;
+  background-color:#FF1493;
   text-align: center;
-  color:#fff;
   padding-top:10em;
 }
 
 h1{
-  text-align: center;
-  color:navy;
+  color:aqua;
+}
+
+h2{
+  color:chartreuse;
+}
+
+h3{
+  color:gold;
+}
+
+h4{
+  color:khaki;
+}
+
+h5{
+  color:mediumblue;
 }
