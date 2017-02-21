@@ -1,12 +1,13 @@
 body {
     background:url(hiujk.gif);
-    position: fixed;
+    position: relative;;
   }
 h1{
   color:yellow;
   text-align: center;
   text-shadow: 5px 5px #FF0000;
   font-size: 1000%;
+  position: relative;
 }
 div{
   color:yellow;
