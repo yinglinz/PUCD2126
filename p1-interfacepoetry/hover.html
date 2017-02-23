@@ -1,0 +1,65 @@
+
+<script src="http://www.w3school.com.cn/jquery/jquery-1.11.1.min.js"></script>
+<link rel="stylesheet" href="hover.css" />
+<audio id="audio1">
+<source src="sound-1.mov" type="audio/mp3"></source>
+</audio>
+<audio id="audio2">
+<source src="sound-2.mov" type="audio/mp3"></source>
+</audio>
+<audio id="audio3">
+<source src="sound-3.mov" type="audio/mp3"></source>
+</audio>
+<audio id="audio4">
+<source src="sound-4.mov" type="audio/mp3"></source>
+</audio>
+<body>
+<img id="img1" src="sound01.gif" width="300px" height="auto" />
+<img id="img2" src="sound02.gif" width="300px" height="auto" />
+<img id="img3" src="sound03.gif" width="300px" height="auto" />
+<img id="img4" src="sound05.gif" width="300px" height="auto" />
+</body>
+<script>
+$(document).ready(function(){
+
+    $("#img1").hover(function(){
+
+            document.getElementById("audio1").play();
+			});
+
+	$("#img2").hover(function(){
+
+            document.getElementById("audio2").play();
+			});
+
+	$("#img3").hover(function(){
+
+            document.getElementById("audio3").play();
+			});
+
+	$("#img4").hover(function(){
+
+            document.getElementById("audio4").play();
+			});
+			$("#img1").mouseleave(function(){
+
+			document.getElementById("audio1").currentTime=0;
+            document.getElementById("audio1").pause();
+			});
+			$("#img2").mouseleave(function(){
+
+			document.getElementById("audio2").currentTime=0;
+            document.getElementById("audio2").pause();
+			});
+			$("#img3").mouseleave(function(){
+
+			document.getElementById("audio3").currentTime=0;
+            document.getElementById("audio3").pause();
+			});
+			$("#img4").mouseleave(function(){
+			
+			document.getElementById("audio4").currentTime=0;
+            document.getElementById("audio4").pause();
+			});
+});
+</script>
