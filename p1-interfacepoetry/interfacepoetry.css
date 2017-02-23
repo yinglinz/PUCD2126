@@ -18,3 +18,12 @@ h1{
   left: 160px;
   top: 629px;
 }
+
+.heart02 {
+  position: absolute;
+  width:92px;
+  height:74px;
+  border:0;
+  left: 900px;
+  top: 629px;
+}
