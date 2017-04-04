@@ -1,0 +1,154 @@
+@charset "utf-8";
+/* CSS Document */
+body{ margin:0px; padding:0px; font-size:12px;font-family:"Cabin","黑体";color:#292929;line-height:1; background:#9b9b9b; }
+ul,li,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,ol,form{ margin:0px; padding:0px;}
+ul,li{ list-style:none}
+img{border:0px; padding:0px;}
+a{ color:#5c5c5c; text-decoration:none}
+a:hover { text-decoration: none; }
+
+.clear{ zoom: 1; }
+.clear:after { content: ''; display: block; clear: both; }
+.fl { float:left}
+.fr { float:right}
+.hidden{display:none;}
+
+/* global layout */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 25px;
+    /* border: 1px dashed rgba(255,0,0,0.3); */
+    display: inline-block;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+}
+
+.wrap { margin: 0 auto; display: block; float: none; margin-top: 30px; }
+h1 { font-size: 126px; line-height: 162px; font-weight: bold; text-align: left; }
+h1 span { display: inline-block; }
+h1 span a { color: #fff; position: relative; display: block; }
+h1 span a:after { content: ""; position: absolute; width: 100%; height: 100%;left: 30px; top: 0; border: 4px solid #000; }
+
+.nav { margin-top: 54px; text-align: left; }
+.nav a { display: inline-block; padding: 20px 26px; font-size: 57px; color: #fff; border: 4px solid transparent; }
+.nav a:hover { color: #4a4a4a; border: 4px solid #81cd2d; }
+.nav a.active { color: #4a4a4a; border: 4px solid #bd10e0; }
+
+
+.main1 { margin-top: 130px; position: relative; margin-bottom: 75px; }
+.main1 img { float: right; width: 72%; height: auto; margin-top: 290px; }
+.main1_01 { position: absolute; left: 0; top: 0; }
+.main1 small,.main2 small,.gallery small { display: block; font-size: 21px; margin-bottom: 40px; }
+.main1 p { width: 628px; font-size: 40px; line-height: 46px; position: relative; }
+.main1 p:after { content: ""; width: 101%; height: 100%; position: absolute; border: 3px solid #1227bb; left: -4px; top: 20px; }
+
+.main2 h2 { font-size: 57px; font-weight: bold; color: #5c5c5c; line-height: 1.17; margin-bottom: 135px; }
+.main2 p { font-size: 35px; line-height: 1.5; margin-bottom: 40px; }
+.main_p { margin-bottom: 240px; position: relative; }
+.main2_01:after { content: ""; width: 100%; height: 100%; position: absolute; left: 30px; top: 136px; border: 4px solid #cf061e; }
+.main2_02:after { content: ""; width: 40%; height: 100%; position: absolute; left: -20px; top: 166px; border: 3px solid #12933b; }
+.main2_03:after { content: ""; width: 40%; height: 120%; position: absolute; left: 30%; top: -80px; border: 6px solid #f5a623; }
+
+.gallery_wrap.col-11 { padding: 0; }
+.gallery small { margin-bottom: 160px; }
+.gallery_01 { width: 64%; margin: 0 auto; }
+.gallery_02 { width: 42%; margin-left: 8.6%; }
+.gallery_03 { width: 68%; margin-left: 24%; }
+.gallery_04 { width: 82%; margin-left: -4.6%; }
+.gallery_05 { width: 53%; margin-left: 6%; }
+.gallery img { display: block; margin-bottom: 260px; }
+
+.mainpage { margin-top: 40px; padding-bottom: 30px; }
+.mainpage_a { margin-top: 90px; text-align: center; }
+.mainpage_a a { display: inline-block; width: 19px; height: 19px; margin: 0 6px; background-image: url(../images/icon.png); }
+.mainpage_a a.a1 { background-position: 0 0; }
+.mainpage_a a.a2 { background-position: -30px 0; }
+.mainpage_a a.a3 { background-position: -60px 0; }
+.mainpage_a a.a4 { background-position: right 0; }
+
+.songs { padding-bottom: 150px; }
+.songs .col-12 { float: none; }
+.songs img { width: 80%; display: block; margin: 375px 0 75px 10%; }
+.songs audio { width: 45%; display: block; margin: 0 auto; min-width: 304px; }
+.songs_01 { margin-left: 10%; width: 90%; margin-top: 146px; color: #fff; position: relative; }
+.songs_01:after { content: ""; width: 92%; height: 95%; border: 11px solid #f5a623; position: absolute; left: -5%; top: 5%; z-index: -1; }
+.songs_01 h3 { font-size: 57px; font-weight: bold; margin-bottom: 140px; }
+.songs_01 a { color: #fff; font-size: 57px; line-height: 1.22; }
+.songs_01 a:hover { color: #066be0; }
+
+.video { padding-bottom: 150px; }
+.video h3 { margin: 330px 0 150px; font-size: 57px; padding-left: 15%; font-weight: bold; box-sizing: border-box; color: #5c5c5c; }
+.video video { width: 70%; margin-left: 15%; display: block; min-width: 210px; }
+
+@media (max-width: 940px) {
+    h1 { font-size: 60px; line-height: 80px; }
+    h1 span:after { height: 80px; }
+    .nav { margin-top: 30px; }
+    .nav a { padding: 10px 15px; font-size: 30px; }
+    .main1 p { width: 400px; font-size: 26px; line-height: 32px; position: relative; }
+    .main1 p:after { height: 288px; }
+    .main1 small,.main2 small { font-size: 14px; margin-bottom: 20px; }
+    .main2 h2 { font-size: 40px; margin-bottom: 60px; }
+    .main2 p { font-size: 24px; }
+    .main_p { margin-bottom: 120px; }
+    .main2_01:after { top: 60px; }
+    .main2_02:after { top: 60px; }
+    .gallery img { margin-bottom: 100px; }
+    .gallery small { margin-bottom: 60px; }
+    .songs img { margin: 200px 0 60px 10%; }
+    .songs_01 { margin-top: 60px; }
+    .songs_01 h3 { font-size: 34px; margin-bottom: 70px; }
+    .songs_01 a { font-size: 34px; }
+    .songs_01:after { border-width: 6px; }
+    .video h3 { margin: 150px 0 80px; font-size: 36px; }
+}
+@media (max-width: 540px) {
+    .main1 { margin-top: 40px; }
+    .wrap.col-11 { width: 100%; padding: 10px; }
+    h1 { font-size: 50px; line-height: 70px; }
+    h1 span:after { height: 70px; }
+    .nav { margin-top: 25px; }
+    .nav a { padding: 5px 10px; font-size: 20px; }
+    .nav .col-3 { padding: 10px; }
+    .main1 p { width: 300px; font-size: 20px; line-height: 26px; position: relative; }
+    .main1 p:after { height: 238px; }
+    .main1 img { float: right; width: 82%; height: auto; margin-top: 220px; }
+    .main2 h2 { font-size: 30px; }
+    .main2 p { font-size: 18px; }
+    .main2_01:after { width: 80%; }
+    .main2_02:after { left: -4px; }
+    .gallery img { margin-bottom: 60px; }
+    .gallery small { margin-bottom: 30px; }
+    .mainpage_a { margin-top: 40px; }
+    .songs img { margin: 80px 0 40px 10%; }
+    .songs_01 { margin-top: 40px; }
+    .songs_01 h3 { font-size: 24px; margin-bottom: 30px; }
+    .songs_01 a { font-size: 24px; }
+    .video h3 { margin: 60px 0 30px; font-size: 24px; }
+}
+@media (max-width: 340px) {
+    h1 { font-size: 40px; line-height: 60px; }
+    h1 span:after { height: 60px; }
+    .nav { margin-top: 25px; }
+    .nav a { padding: 4px 6px; font-size: 20px; }
+    .nav .col-3 { padding: 5px; }
+    .main1 p { width: 280px; font-size: 18px; line-height: 24px; position: relative; }
+    .main1 p:after { height: 216px; }
+    .main1 img { float: right; width: 82%; height: auto; margin-top: 220px; }
+}
+

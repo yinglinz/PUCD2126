@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<title>songs</title>
+<meta http-equiv="Cache-Control" content="no-transform">
+<link href="https://fonts.googleapis.com/css?family=Cabin:400,500,700" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+
+<body>
+<div class="wrap gallery_wrap col-11">
+    <h1><span><a href="index.html">Khalid</a></span></h1>
+    <div class="nav clear">
+        <span class="col-3"><a href="songs.html" class="active">songs</a></span>
+        <span class="col-3"><a href="articles.html">articles</a></span>
+        <span class="col-3"><a href="gallery.html">gallery</a></span>
+        <span class="col-3"><a href="video.html">videos</a></span>
+    </div>
+    <div class="songs">
+        <img src="images/songs.jpg" alt="">
+        <audio controls="controls" id="audioP">
+            <source id="audio" src="resource/songs/8TEEN.mp3" >
+        </audio>
+        <div class="songs_01" id="songs">
+            <h3>Track List</h3>
+            <a class="col-12" href="javascript:;">1. <span>American Teen</span></a>
+            <a class="col-12" href="javascript:;">2. <span>Young Dumb & Broke</span></a>
+            <a class="col-12" href="javascript:;">3. <span>Location</span></a>
+            <a class="col-12" href="javascript:;">4. <span>Another Sad Love Song</span></a>
+            <a class="col-12" href="javascript:;">5. <span>Saved</span></a>
+            <a class="col-12" href="javascript:;">6. <span>Coaster</span></a>
+            <a class="col-12" href="javascript:;">7. <span>8TEEN</span></a>
+            <a class="col-12" href="javascript:;">8. <span>Let’s Go</span></a>
+            <a class="col-12" href="javascript:;">9. <span>Hopeless</span></a>
+            <a class="col-12" href="javascript:;">10. <span>Cold Blooded</span></a>
+            <a class="col-12" href="javascript:;">11. <span>Winter</span></a>
+            <a class="col-12" href="javascript:;">12. <span>Therapy</span></a>
+            <a class="col-12" href="javascript:;">13. <span>Keep Me</span></a>
+            <a class="col-12" href="javascript:;">14. <span>Shot Down</span></a>
+            <a class="col-12" href="javascript:;">15. <span>Angels</span></a>
+        </div>
+    </div>
+</div>
+<script>
+    var audioP = document.getElementById('audioP');
+    var audio = document.getElementById('audio');
+    var songs = document.getElementById('songs');
+    var aaa = songs.getElementsByTagName('a');
+    for(var i = 0; i < aaa.length; i++){
+        aaa[i].index = i;
+        aaa[i].onclick = function(){
+            audio.src = 'resource/songs/'+aaa[this.index].getElementsByTagName('span')[0].innerHTML+'.mp3';
+            audioP.load();
+        }
+    }
+
+</script>
+</body>
+</html>
