@@ -1,28 +1,85 @@
-
-
-  .container{
-  position: absolute;
-  display: flex;
-  flex-flow:column-reverse;
-  justify-content: flex-end;
-  align-items: center;
-  width: 1000px;
-  height: 800px;
-  background: azure;
+#wrapper {
+	width: 1200px;
+	margin: 0 auto;
+	box-shadow: 0px 0px 10px #ccc;
+	background: white;
 }
 
-.item{
-  display:flex;
-  align-self: auto;
-  background: aqua;
-  padding: 5px;
-  width: 200px;
-  height: 150px;
-  margin-top: 10px;
+body {
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial;
+	background: url('images/back.gif');
+}
 
-  line-height: 150px;
-  color: ;
-  font-weight: bold;
-  font-size: 3em;
-  text-align: center;
+a {
+	font-family: Arial;
+	text-decoration: none;
+}
+
+ul {
+	margin: 0px;
+}
+
+li {
+	list-style: none;
+}
+
+#header {
+	background: purple;
+}
+
+#nav {
+	display: flex;
+}
+
+#nav li {
+	flex-direction: row;
+	width: 20%;
+	text-align: center;
+	padding: 15px 0px;
+}
+
+#nav li a {
+	color: white;
+	font-size: 20px;
+}
+
+#nav li a:hover {
+	color: red;
+}
+
+#content {
+	display:-moz-box;
+	display:-webkit-box;
+	display:box;
+	padding: 20px;
+}
+
+#left {
+	-moz-box-flex:2.0;
+	-webkit-box-flex:2.0;
+	box-flex:2.0;
+}
+
+#left p {
+	margin-top: 0px;
+	padding-right: 10px;
+}
+
+#right {
+	-moz-box-flex:3.0;
+	-webkit-box-flex:3.0;
+	box-flex:3.0;
+}
+
+#right img {
+	width: 100%;
+	border: none;
+}
+
+#footer {
+	background: pink;
+	padding: 15px 0px;
+	text-align: center;
 }
